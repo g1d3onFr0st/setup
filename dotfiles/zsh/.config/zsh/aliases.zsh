@@ -1,0 +1,9 @@
+alias c="clear"
+alias cf="clear && fastfetch"
+alias ls="eza"
+alias la="eza -a"
+alias cd='z'
+alias reload='source $ZDOTDIR/.zshrc'
+alias hstow='stow -t ~ '
+alias weather="curl wttr.in"
+alias rf="rm -rf "

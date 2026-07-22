@@ -1,0 +1,9 @@
+[Daemon]
+LockGrace=300
+Timeout=10
+
+[Greeter][Wallpaper][org.kde.image][General]
+DynamicMode=3
+FillMode=0
+Image=file:///home/g1d3onFr0st/Pictures/wallpapersOrPfp/school_of_athens.jpg
+PreviewImage=file:///home/g1d3onFr0st/Pictures/wallpapersOrPfp/school_of_athens.jpg

@@ -1,0 +1,6 @@
+[Libinput][2652][0][Bluetooth 5.1 Keyboard Mouse]
+NaturalScroll=false
+
+[Libinput][2652][0][Bluetooth 5.1 Keyboard Touchpad]
+Enabled=true
+NaturalScroll=true

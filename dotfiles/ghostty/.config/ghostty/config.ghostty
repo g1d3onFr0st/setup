@@ -1,0 +1,34 @@
+# font-size = 12
+
+window-padding-x = 8
+window-padding-y = 8
+
+
+font-family = 0xProto Nerd Font Mono
+font-family-bold = 0xProto Nerd Font Mono Bold
+font-family-italic = 0xProto Nerd Font Mono Italic
+font-family-bold-italic = 0xProto Nerd Font Mono Bold
+background-opacity = 0.95
+theme = Argonaut
+selection-background = #002A3B
+selection-foreground = #FFFFFF
+selection-clear-on-typing=false
+selection-clear-on-copy=true
+# clipboard-codepoint-map = U+03A3=SUM (Greek sigma → "SUM")
+cursor-opacity = 1
+mouse-hide-while-typing=true
+
+
+cursor-style = bar
+mouse-shift-capture = false
+
+
+
+
+
+focus-follows-mouse = true
+mouse-reporting = true
+# notify-on-command-finish = always
+# notify-on-command-finish-action = bell,notify
+maximize = true
+keybind = global:super+shift+enter=toggle_quick_terminal
