@@ -1,4 +1,9 @@
-setopt autocd extendedglob GLOB_DOTS nobeep INTERACTIVE_COMMENTS NO_CLOBBER RM_STAR_WAIT COMPLETE_IN_WORD AUTO_MENU GLOB_COMPLETE AUTO_PARAM_SLASH NUMERIC_GLOB_SORT LIST_PACKED CDABLE_VARS CHECK_JOBS LONG_LIST_JOBS AUTO_CONTINUE                              
+
+# if [[ -z "$FASTFETCH_SHOWN" ]]; then
+#     export FASTFETCH_SHOWN=1
+#     fastfetch
+# fi
+setopt autocd extendedglob GLOB_DOTS nobeep INTERACTIVE_COMMENTS NO_CLOBBER RM_STAR_WAIT COMPLETE_IN_WORD AUTO_MENU GLOB_COMPLETE AUTO_PARAM_SLASH NUMERIC_GLOB_SORT CDABLE_VARS CHECK_JOBS LONG_LIST_JOBS AUTO_CONTINUE                              
 
 source "$HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"

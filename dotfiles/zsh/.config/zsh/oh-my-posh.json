@@ -68,7 +68,7 @@
                     "background": "#c4a000",
                     "foreground": "#000000",
                     "invert_powerline": true,
-                    "powerline_symbol": "",
+                    "powerline_symbol": "",
                     "style": "powerline",
                     "template": " {{ .FormattedMs }}  ",
                     "type": "executiontime"
@@ -80,7 +80,7 @@
                     ],
                     "foreground": "#d3d7cf",
                     "invert_powerline": true,
-                    "powerline_symbol": "",
+                    "powerline_symbol": "",
                     "options": {
                         "always_enabled": true
                     },

@@ -22,7 +22,7 @@ mouse-hide-while-typing=true
 cursor-style = bar
 mouse-shift-capture = false
 
-
+initial-command = zsh -ic 'fastfetch; exec zsh'
 
 
 

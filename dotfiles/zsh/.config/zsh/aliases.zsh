@@ -2,6 +2,9 @@ alias c="clear"
 alias cf="clear && fastfetch"
 
 alias reload='source $ZDOTDIR/.zshrc'
+alias reloadc='source $ZDOTDIR/.zshrc && clear'
+alias reloadcf='source $ZDOTDIR/.zshrc && clear && fastfetch'
+
 alias hstow='stow -t ~ '
 alias weather="curl wttr.in"
 alias rf="rm -rf "
