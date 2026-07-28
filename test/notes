@@ -1,0 +1,44 @@
+awk -F= '/^ID=/{gsub(/"/, "", $2); print $2}' /etc/os-release >>>>>>>> to get the os
+kde part man
+uuctl
+kwrite
+komoso
+kcalc
+k char select
+
+
+
+
+
+
+paths = with pkgs; [
+  btop
+  bun
+  chromium
+  cmatrix
+  direnv
+  docker
+  duf
+  eza
+  fastfetch
+  fd
+  firefox-devedition
+  fzf
+  gcc
+  git
+  lazygit
+  noctalia-shell
+  nodejs
+  oh-my-posh
+  ripgrep
+  stow
+  telegram-desktop
+  vscode
+  wev
+  wooz
+  yazi
+  zoxide
+  zsh-autosuggestions
+  zsh-history-substring-search
+  zsh-syntax-highlighting
+];

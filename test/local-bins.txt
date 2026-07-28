@@ -1,0 +1,49 @@
+enable scottames/ghostty
+installing nix nix-daemon zsh postgresql-server ghostty pgcli gh sddm
+
+
+
+
+
+
+
+curl -f https://zed.dev/install.sh | sh
+
+
+
+
+sudo postgresql-setup --initdb
+sudo /usr/bin/postgresql-setup --initdb
+
+sudo systemctl enable --now postgresql
+sudo -iu postgres pgcli
+
+ALTER USER postgres WITH PASSWORD 'UR PASSWD';
+
+sudo nano /var/lib/pgsql/data/pg_hba.conf
+
+
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# Unix socket connections
+local   all             all                                     scram-sha-256
+
+# IPv4 localhost
+host    all             all             127.0.0.1/32            scram-sha-256
+
+# IPv6 localhost
+host    all             all             ::1/128                 scram-sha-256
+
+# Replication
+local   replication     all                                     scram-sha-256
+host    replication     all             127.0.0.1/32            scram-sha-256
+host    replication     all             ::1/128                 scram-sha-256
+
+
+
+
+sudo systemctl restart postgresql
+
+
+
+source /etc/os-release && echo "$ID"

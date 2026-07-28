@@ -1,0 +1,69 @@
+// workspace "terminal"
+workspace "main"
+workspace "browser"
+//
+// // ── Startup ──────────────────────────────
+//
+
+spawn-at-startup  "firefox-devedition" "--name" "Startup Browser"
+spawn-at-startup "ghostty" "--title=Startup Terminal"
+// spawn-at-startup "ghostty" "--title=BTOP" "-e" "btop"
+//
+// // ── Terminal ─────────────────────────────
+//
+window-rule {
+    match app-id="com.mitchellh.ghostty" title="^Startup Terminal$"
+    open-maximized true
+    open-on-workspace "main"
+        open-focused true
+}
+window-rule {
+    match app-id="Startup Browser"
+    open-maximized true
+    open-on-workspace "browser"
+        open-focused false
+}
+
+//
+// // ── BTOP → Media ─────────────────────────
+//
+// window-rule {
+//     match app-id="com.mitchellh.ghostty" title="^BTOP$"
+//     open-fullscreen true
+//     open-on-workspace "media"
+//         open-focused false
+// }
+
+include "input.kdl"
+include "output.kdl"
+include "layout.kdl"
+include "binds.kdl"
+
+
+spawn-at-startup "niri" "msg" "action" "focus-workspace" "main"
+spawn-at-startup "noctalia"
+// spawn-at-startup "dms" "run"
+spawn-at-startup "/usr/libexec/kf6/polkit-kde-authentication-agent-1"
+switch-events {
+    lid-close { spawn "systemctl suspend"; }
+    lid-open { spawn "notify-send" "-a" "frodorax" "Welcome back g1d3onFr0st!"; }
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+// screenshot-path null
+animations {
+    // off
+    slowdown 1.5
+}
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+
+
+
