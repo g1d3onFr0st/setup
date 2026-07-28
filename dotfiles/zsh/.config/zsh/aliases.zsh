@@ -9,11 +9,11 @@ alias hstow='stow -t ~ '
 alias weather="curl wttr.in"
 alias rf="rm -rf "
 alias v="nvim"
-
+alias :qa="sudo shutdown now"
 alias prp="hostname -I"
 alias pup="curl ifconfig.me"
 alias md="mkdir -p "
-
+alias :q="exit"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
@@ -23,4 +23,5 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lla="ls -la"
 alias cd='z'
+alias swu='sudo dnf update && sudo dnf upgrade'
 
