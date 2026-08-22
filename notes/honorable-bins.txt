@@ -1,0 +1,35 @@
+gum
+redis , CLI
+sqlite , cli , browser 
+konsave
+distrobox or a VM
+podman 
+Git LFS
+tailscale headscale
+
+
+
+KeePassXC
+watchexec
+ttyd
+asciinema
+choose
+sd
+
+
+
+Inkscape
+Krita
+gimp
+audacity
+kdenlive
+
+
+
+pandoc
+poppler-utils
+ImageMagick
+qpdf
+jpdf
+
+

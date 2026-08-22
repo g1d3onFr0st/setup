@@ -34,3 +34,19 @@ bindkey '^[[1;3B' history-substring-search-down
 
 bindkey '^H' backward-kill-word
 bindkey '^[[3;5~' kill-word
+
+bindkey '^[[3~' delete-char
+
+
+
+start-zellij() {
+    [[ -n "$ZELLIJ" ]] && return
+
+    BUFFER="zellij"
+    CURSOR=${#BUFFER}
+    zle accept-line
+}
+
+zle -N start-zellij
+bindkey $'\e[27;5;13~' start-zellij
+bindkey '^K' start-zellij

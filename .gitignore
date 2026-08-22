@@ -2,3 +2,5 @@ lazy-lock.json
 .histfile
 .zcompdump
 node_modules
+dotfiles/local-bins/.local/bin/zed
+dotfiles/lazysql/.config/lazysql/config.toml

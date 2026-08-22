@@ -1,8 +1,4 @@
-zstyle :compinstall filename '/home/g1d3onFr0st/.config/zsh/.zshrc'
-
-autoload -Uz compinit
-compinit
-
+zstyle :compinstall filename '$ZDOTDIR/.zshrc'
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list \
 'm:{a-z}={A-Za-z}'
@@ -11,4 +7,7 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' use-cache yes
 zstyle ':completion:*' cache-path ~/.cache/zsh
 # zstyle ':completion:*' special-dirs true
+
+autoload -Uz compinit
+compinit
 

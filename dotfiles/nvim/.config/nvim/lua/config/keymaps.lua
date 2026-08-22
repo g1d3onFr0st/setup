@@ -6,17 +6,17 @@ local map = vim.keymap.set
 local del = vim.keymap.del
 
 map("", "<leader>E", function()
-  require("neo-tree.command").execute({
-    position = "float",
-    action = "focus",
-  })
+    require("neo-tree.command").execute({
+        position = "float",
+        action = "focus",
+    })
 end, { desc = "File Explorer (Picker) " })
 
 map("", "<leader>e", function()
-  require("neo-tree.command").execute({
-    position = "right",
-    action = "focus",
-  })
+    require("neo-tree.command").execute({
+        position = "right",
+        action = "focus",
+    })
 end, { desc = "File Explorer (Preview) " })
 
 map({ "n", "i", "v" }, "<c-q>", "<cmd>q<cr>")

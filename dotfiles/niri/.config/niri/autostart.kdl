@@ -1,0 +1,10 @@
+// spawn-at-startup "zsh" "-lc" "~/.config/niri/scripts/init.sh"
+spawn-at-startup "zsh" "-lc" "~/.config/niri/scripts/noctalia-bar-toggle.sh"
+spawn-at-startup "noctalia"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "~/.local/bin/niri-zoomd"
+
+
+spawn-at-startup "ghostty"
+spawn-at-startup "firefox-devedition"

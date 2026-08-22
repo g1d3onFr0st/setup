@@ -16,13 +16,13 @@
     "terminalfont",
     "cpu",
     "gpu",
+    "swap",
     "memory",
     "disk",
     "localip",
     "battery",
     "poweradapter",
-    "locale",
-    "break"
+    // "break"
      ]
 }
 // {
